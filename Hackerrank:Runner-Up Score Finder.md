@@ -1,27 +1,36 @@
-# 🏆 Hackerrank:Runner-Up Score Finder in Python
+# 8d)  Hackerrank: Finding the simple interest.
 
-## 🎯 AIM:
-To write a Python program that takes a list of scores from participants and finds the **runner-up score** (i.e., the second-highest score), eliminating any duplicates.
-
+##  AIM:
+To Find the simple interest by getting the principal, rate and time value from the usersimple interest = (principal*rate*time)/100
 ---
 
-## 🧠 ALGORITHM:
+##  ALGORITHM:
+1.Define a function named simpleInterest that takes three values: principal (p), time (t), and rate (r).
 
-1. **Start**
-2. Create a variable `n` and get its value from the user (number of participants)
-3. Read the list of `n` scores from the user using `input().split()` and convert them to integers
-4. Store the scores in a list
-5. Use `set()` to remove any duplicate scores
-6. Convert the set back to a list and sort it in ascending order
-7. Print the second-last element of the sorted list (i.e., the runner-up score)
-8. **Stop**
+2.Inside the function, calculate simple interest using the formula:
+si = (p * r * t) / 100
 
----
+3.Return the calculated value si from the function.
 
-## 💻 PROGRAM:
+4.Take input from the user for p, the principal amount.
 
-ADD CODE HERE
+5.Take input from the user for r, the rate of interest.
 
+6.Take input from the user for t, the time period.
+
+7.Call the function simpleInterest(p, t, r).
+
+8.Store or print the returned simple interest value.
+
+##  PROGRAM:
+```
+def simpleInterest(p,t,r):
+    si=(p*r*t)/100
+    return si
+p,r,t=eval(input()),eval(input()),eval(input())
+```
 ## OUTPUT
+<img width="1126" height="283" alt="image" src="https://github.com/user-attachments/assets/16c7a266-02ca-49db-9842-0fde56543097" />
 
 ## RESULT
+Program executed Successfully.
